@@ -134,7 +134,7 @@ homepage should respond to a GET request to `/`.
 
 You'll need to create a controller action that will load the tweets index page.
 You'll want to create a view that will display all tweets for the logged in user
-and other used. The tweets index page should respond to a GET request to
+and other users. The tweets index page should respond to a GET request to
 `/tweets`. If a user is not logged in, it will redirect to `/login`.
 
 ### Create Tweet
