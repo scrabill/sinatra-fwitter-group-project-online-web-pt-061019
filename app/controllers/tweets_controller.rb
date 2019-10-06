@@ -1,7 +1,13 @@
 class TweetsController < ApplicationController
 
   get '/tweets' do
-    erb :"/tweets/tweets"
+    @tweets = Tweet.all
+
+    if Helpers.is_logged_in?(session)
+      erb :"/tweets/tweets"
+    end
+
+    redirect "/login"
   end
 
 end
